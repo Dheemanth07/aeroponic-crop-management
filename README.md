@@ -234,4 +234,4 @@ ORDER BY total_harvested_weight DESC;
 
 ## 7. AI Usage Disclosure
 
-Google Gemini was consulted minimally as a reference assistant during setup—specifically for generating initial configuration boilerplate (`tsconfig.json`) and syntax lookup. The domain modeling, schema constraints, business rules, API structure, and test suite were designed and written directly.
+In line with the assignment guidelines, Google Gemini was used selectively for assistance with a few complex areas—specifically, validating the partial unique index approach for database-level concurrency protection, reviewing edge cases around state transitions, and sanity-checking the single SQL aggregation query for yield calculations. The core application logic, route handlers, schema validation, and test cases were implemented independently.
