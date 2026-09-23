@@ -234,4 +234,14 @@ ORDER BY total_harvested_weight DESC;
 
 ## 7. AI Usage Disclosure
 
-In line with the assignment guidelines, Google Gemini was used selectively for assistance with a few complex areas—specifically, validating the partial unique index approach for database-level concurrency protection, reviewing edge cases around state transitions, and sanity-checking the single SQL aggregation query for yield calculations. The core application logic, route handlers, schema validation, and test cases were implemented independently.
+Google Gemini was used for:
+- Verifying PostgreSQL partial unique index syntax for the active batch constraint.
+- Reviewing the date difference calculation for the single SQL yield report query.
+- Brainstorming edge cases in the specification.
+
+The following were designed and written directly:
+- All Fastify API route handlers and HTTP status code mappings.
+- Input validation schemas using Zod.
+- Business logic for the sequential lifecycle state machine and harvest checks.
+- Database table definitions and migration setup.
+- The automated test suites for business rules, concurrency, and idempotency.
